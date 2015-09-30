@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Login Tests">
+        <parameter name="language" value="En"/>
+        <parameter name="browserType" value="CHROME"/>
+        <parameter name="userName" value="tiqqqit@ymail.com"/>
+        <parameter name="password" value="Loyal30924"/>
+        <parameter name="imageDir" value="C:\FlickrImages"/>
+        <!-- imageDir's name can only contains chars [0-9.xflickrmagesjdp\] -->
+        <test name="upload one photo">
+                <parameter name="numOfImagesString" value="1"/>
+                <classes>
+                <class name="com.Flickr.Tests.FlickrTestCases">
+                        <methods>
+                                <include name="testLoginPage"/>
+                                <include name="testLaunchLoadOneImage"/>
+                        </methods>
+                </class>
+        </classes>
+        </test>
+        <test name="Without Login - randomly upload two images(no repeat) ">
+                <parameter name="numOfImagesString" value="2"/>
+                <classes>
+                        <class name="com.Flickr.Tests.FlickrTestCases">
+                                <methods>
+                                        <include name="testLaunchLoadTwoImageWithoutLogin"/>
+                                </methods>
+                        </class>
+                </classes>
+        </test>
+        <test name="FUZZ TESTING/BOUNDARY TESTING - randomly upload ten images(no repeat) ">
+                <parameter name="numOfImagesString" value="10"/>
+                <classes>
+                        <class name="com.Flickr.Tests.FlickrTestCases">
+                                <methods>
+                                        <include name="testLoginPage"/>
+                                        <include name="testLaunchLoadTenImage"/>
+                                </methods>
+                        </class>
+                </classes>
+        </test>
+</suite>
+
