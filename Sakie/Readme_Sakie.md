@@ -1,6 +1,22 @@
 UI Testing
  - Java, Selenium, TestNG
  - IntelliJ IDEA open my UI coding (NewIDEA_IntelliJ)
+ - Java
+    src.test.java
+     |
+     |--- com
+     |     |--- Flickr.Tests
+     |               |---  FlickrTestCases.java
+     |--- Pages
+     |       |--- BasePage.java
+     |       |--- LoginPage.java
+     |       |--- UploadPage.java
+     |
+     |--- Utilities
+     |        |--- DriverFactory
+     |        |--- HelperFunctions
+     |
+     |--- testng.xml
 
 
 Prepare:
