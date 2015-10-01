@@ -18,7 +18,8 @@ UI Testing
      |
      |--- testng.xml
 
-    src.test.java
+
+    - src.test.java
 	- com
 		-Flickr.Tests
 			-FlickrTestCases.java
