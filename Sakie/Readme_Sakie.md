@@ -18,6 +18,19 @@ UI Testing
      |
      |--- testng.xml
 
+    src.test.java
+	- com
+		-Flickr.Tests
+			-FlickrTestCases.java
+	- Pages
+		- BasePage.java
+		- LoginPage.java
+		- UploadPage.java
+	- Utilities
+		- DriverFactory
+		- HelperFunctions
+	- testng.xml
+
 
 Prepare:
  1. Image dir:
