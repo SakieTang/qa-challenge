@@ -34,7 +34,8 @@ UI Testing
 
 
 Prepare:
- 1. Image dir:
+ 1. Move 'chromedriver.exe' from 'src/Driver' to 'c:/'
+ 2. Image dir:
     - Customer : 
 	1. change in testng.xml (\NewIDEA_IntelliJ\src\test\testng.xml)
 	   <parameter name="imageDir" value="C:\FlickrImages"/>
@@ -44,10 +45,10 @@ Prepare:
      - Default :
 	1. Using default ( C:\FlickrImages" )
 
- 2. Put source images to Image dir :
+ 3. Put source images to Image dir :
      - images under this dir : \NewIDEA_IntelliJ\src\test\FlickrImages
 
- 3. Delete existing images:
+ 4. Delete existing images:
 	Url: https://www.flickr.com/cameraroll
 	email = 'tiqqqit@ymail.com'
  	password = 'Loyal30924'
